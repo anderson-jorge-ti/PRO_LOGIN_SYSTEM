@@ -1,5 +1,7 @@
 <?php
 
+const MAIL = [];
+
 const DATA_LAYER_CONFIG = [
     "driver" => "mysql",
     "host" => "localhost",
