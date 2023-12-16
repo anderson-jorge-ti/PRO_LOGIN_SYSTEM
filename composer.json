@@ -1,0 +1,32 @@
+{
+  "name": "vendor_name/login",
+  "description": "A basic login system",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Tulio Elias",
+      "email": "email@example.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-pdo": "*",
+    "coffeecode/router": ">=2.0.0",
+    "coffeecode/datalayer": ">=2.0.0",
+    "phpmailer/phpmailer": ">=v6.9.0",
+    "league/plates": "^3.5"
+  }
+}
